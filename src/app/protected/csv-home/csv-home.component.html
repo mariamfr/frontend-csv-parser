@@ -1,0 +1,19 @@
+<div class="maincontent">
+    <div class="file-upload-wrapper">
+        <div class="file-upload-wrapper-title">
+            <h4>File Upload</h4>
+            <hr />
+            <button class="file-upload-wrapper-title__btn" (click)="onUpLoad()">
+                Upload Now
+            </button>
+        </div>
+        <div class="box-fileupload">
+            <input (change)="onFileSelected($event)" type="file" id="fileId" class="file-upload-input" name="files" multiple>
+            <label for="fileId" class="file-upload-btn"></label>
+            <p class="box-fileupload__lable">Drop files here to upload</p>
+        </div>
+        <div class="error-wrapper"></div>
+        <div class="image-previwe"></div>
+    </div>
+</div>
+

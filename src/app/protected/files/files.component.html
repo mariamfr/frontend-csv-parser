@@ -1,0 +1,6 @@
+<div class="files-container">
+    <div *ngFor = "let file of files" class="file-card">
+        <h3 (click)="viewFile(file._id)"><a >{{file.name}}</a></h3>
+        <button (click)="deleteFileById(file._id)">Delete</button>
+    </div>
+</div>

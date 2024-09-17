@@ -1,0 +1,39 @@
+.files-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.file-card {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-card:hover {
+    background-color: #0056b3;
+}
+
+.file-card h3 {
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.file-card button {
+    background-color: #ff4b5c;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-card button:hover {
+    background-color: #d83540;
+}

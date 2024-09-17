@@ -1,0 +1,25 @@
+<div *ngIf="file">
+    <!-- nombre del archivos -->
+    <h2>{{file.name}} </h2>
+    <table>
+        <thead>
+            <tr>
+                <!-- recorre para buscar los encabezados -->
+                <th *ngFor="let row of getKeys(file.data[0])"  class="uppercase">
+                    <!-- muestra los keys y requiere la funcion getKeys del objeto -->
+                    {{row}}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- recorre las filas  -->
+            <tr *ngFor="let row of file.data">
+                <!-- trae los datos de esa fila -->
+                <td *ngFor="let key of getKeys(row)">
+                    <!-- muestra la data| -->
+                    {{ row[key]}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
